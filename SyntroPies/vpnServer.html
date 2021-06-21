@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temp Config</title>
+ 
+  <link rel="stylesheet" href="app.css">
+
+  <!-- cockpit inclustions -->
+  <link href="../base1/cockpit.css" type="text/css" rel="stylesheet">
+  <script src="../base1/cockpit.js"></script>
+  <!-- cockpit inclustions -->
+
+</head>
+<body>
+
+  <form>
+    <h1>Syntropy VPN Server Configuration</h1> <br>
+
+    <!-- to be shown once configurations have been specified -->
+    <div>
+        <button type="button" id="writeChangesBtn" class="btn btn-danger">Write changes to file</button>
+    </div>
+
+    <code id="codeblock"></code>
+
+    <h3>Required</h3>
+    <!-- inputs -->
+    <div class="form-group">
+      <label for="exampleInputEmail1">Agent token:             </label>
+      <input type="text" required class="form-control" id="SYNTROPY_API_KEY" placeholder="# This is the key that is used to authenticate you">
+    </div>
+
+    <div class="form-group">
+      <label for="exampleInputEmail1">Port range:              </label>
+      <input type="text" class="form-control" id="SYNTROPY_PORT_RANGE" placeholder="# Which ports should the agent listen to? e.g. 20480 - 48430">
+    </div>
+
+    <div class="form-group">
+      <label for="exampleInputEmail1">Allowed IPs:             </label>
+      <input type="text" class="form-control" id="SYNTROPY_ALLOWED_IPS" placeholder='# CIDR and identification in JSON format, e.g. [{"0.0.0.0/0":"internet"}]'>
+    </div>
+
+    <h3>Optional</h3>
+
+    <div class="form-group">
+      <label for="exampleInputEmail1">Agent name:              </label>
+      <input type="text" required class="form-control" id="SYNTROPY_AGENT_NAME" placeholder="# An identifier you want for your endpoint, for identification">
+    </div>
+
+    <div class="form-group">
+      <label for="exampleInputEmail1">Agent tag:               </label>
+      <input type="text" class="form-control" id="SYNTROPY_TAGS" placeholder="# Useful as a way to group and identify similar endpoints">
+    </div>
+
+    <div class="form-group">
+      <label for="exampleInputEmail1">Logging level:           </label>
+      <input type="text" class="form-control" id="SYNTROPY_LOG_LEVEL" placeholder="# 10 = Debug, 20 = Info, 30 = Warnings, 40 = Errors, 50 = Critical">
+
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Platform controller URL:</label><br>
+      <input type="text" vclass="form-control" id="SYNTROPY_CONTROLLER_URL" placeholder="# Default is controller-prod-platform-agents.syntropystack.com">
+    </div>
+
+
+    <button type="button" id="applyBtn" class="btn btn-success">Apply</button>
+    <button type="button" id="rebootBtn" class="btn btn-primary">Reboot system</button>
+
+    <button type="button" id="backBtn" onclick="location.href='selection.html'">Go back to selection</button>
+  </form>
+
+
+  <script src="vpn.js"></script>
+
+</body>
+
+</html>

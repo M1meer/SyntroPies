@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temp Config</title>
+ 
+  <link rel="stylesheet" href="app.css">
+
+  <!-- cockpit inclustions -->
+  <link href="../base1/cockpit.css" type="text/css" rel="stylesheet">
+  <script src="../base1/cockpit.js"></script>
+  <!-- cockpit inclustions -->
+
+</head>
+<body>
+
+  <form>
+    <h1>Syntropy VPN Client Configuration</h1> <br>
+
+    <!-- to be shown once configurations have been specified -->
+    <p>Here you can configure your Pi as a VPN client. As a usecase, consider configuring your raspberry Pi as a wireless access point to your router, and then use it to connect your devices to the internet. You could even have two raspberry PIs: one configured as a client, and one as a server, enabling you to source all of your device's traffic from your home while on the road.</p>
+    <code id="codeblock"></code>
+
+    <label for="exampleInputEmail1">Your exported virtual endpoint client configuration:</label>
+    <textarea class="form-control" id="wireguardconf" rows="20"></textarea>
+    
+
+    <button type="button" id="wgStart" class="btn btn-primary">Write to configuration file</button>
+    <button type="button" id="wgApply" class="btn btn-success">Start WireGuard VPN client</button>
+    <button type="button" id="wgStop" class="btn btn-danger">Stop WireGuard VPN client</button>
+
+    <button type="button" id="backBtn" onclick="location.href='selection.html'">Go back to selection</button>
+  </form>
+
+
+  <script src="vpnClient.js"></script>
+
+</body>
+
+</html>

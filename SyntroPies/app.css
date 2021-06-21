@@ -1,0 +1,68 @@
+form {
+    background-color: white;
+    min-width: 100%;
+    min-height: 100%;
+    padding: 30px;
+  }
+  form div {
+    margin-bottom: 20px;
+  }
+  input[type="text"]{
+    width: 50%;
+  }
+  #SYNTROPY_NETWORK_API {
+    width: 50%;
+  }
+  #disclaimer {
+    width: 50%;
+    padding-top: 2%;
+  }
+  #rebootBtn {
+    display: none;
+  }
+  #backBtn {
+    margin-top: 34px;
+}
+  #statusMsg{
+    float:left;
+    margin-right:5px;
+  }
+  #writeChangesBtn {
+    display: none;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  #codeblock {
+    white-space: pre-line;
+    display: none;
+  }
+  #wgApply {
+    display: none;
+  }
+  input:checked+.slider {
+    background-color: #2196F3;
+  }
+
+  input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  .hide{
+    display: none;
+  }
+  .hideAdvanced{
+    display: none;
+  }
+  button {
+    align: left;
+    float: left;
+    margin-right: 1%;
+    margin-left: 1%;
+    padding: 30px;
+    min-width: 100%;
+    min-height: 100%;
+  }

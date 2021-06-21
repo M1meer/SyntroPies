@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temp Config</title>
+ 
+  <link rel="stylesheet" href="app.css">
+
+  <!-- cockpit inclustions -->
+  <link href="../base1/cockpit.css" type="text/css" rel="stylesheet">
+  <script src="../base1/cockpit.js"></script>
+
+</head>
+<body>
+
+  <form>
+    <h1>Syntropy Agent Configuration</h1> <br>
+    <div>
+      <!-- to be shown once configurations have been specified -->
+        <button type="button" id="writeChangesBtn" class="btn btn-danger">Write changes to file</button>
+    </div>
+    <code id="codeblock"></code>
+
+
+    <h3>Required</h3>
+    <!-- inputs -->
+    <div class="form-group">
+      <label for="exampleInputEmail1">Agent token:             </label>
+      <input type="text" required class="form-control" id="SYNTROPY_API_KEY" placeholder="# This is the key that is used to authenticate you">
+    </div>
+
+    <h3>Optional</h3>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Agent name:              </label>
+      <input type="text" required class="form-control" id="SYNTROPY_AGENT_NAME" placeholder="# An identifier you want for your endpoint, for identification">
+    </div>
+
+    <div class="form-group">
+      <label for="exampleInputEmail1">Agent tag:               </label>
+      <input type="text" class="form-control" id="SYNTROPY_TAGS" placeholder="# Useful as a way to group and identify similar endpoints">
+    </div>
+
+    <p id="disclaimer">Select the types of services you wish to make available to the Syntropy network:</p>
+    
+
+
+    <select class="form-control" id="SYNTROPY_NETWORK_API">
+      <option></option>
+      <option>docker</option>
+      <option>ansible</option>
+      <option>host</option>
+    </select>
+
+                                  <!-- ADVANCED, TOGGLE TO VIEW -->
+
+    <div class="form-check" style="padding-left: 0px;margin:20px 0px;">
+      <p>Show advanced settings:</p>
+      <label class="switch">
+        <input type="checkbox" id="advanced_tgl" value="TGLMSG">
+      </label>
+    </div>
+
+    <div class="form-group hideAdvanced">
+      <label for="exampleInputEmail1">Logging level:           </label>
+      <input type="text" class="form-control" id="SYNTROPY_LOG_LEVEL" placeholder="# 10 = Debug, 20 = Info, 30 = Warnings, 40 = Errors, 50 = Critical">
+    </div>
+
+    <div class="form-group hideAdvanced">
+      <label for="exampleInputEmail1">Platform controller URL:</label><br>
+      <input type="text" vclass="form-control" id="SYNTROPY_CONTROLLER_URL" placeholder="# Default is controller-prod-platform-agents.syntropystack.com">
+    </div>
+
+    <div class="form-group hideAdvanced">
+      <label for="exampleInputEmail1">Port range:              </label>
+      <input type="text" class="form-control" id="SYNTROPY_PORT_RANGE" placeholder="# Which ports should the agent listen to? e.g. 20480 - 48430">
+    </div>
+
+    <div class="form-group hideAdvanced">
+      <label for="exampleInputEmail1">Allowed IPs:             </label>
+      <input type="text" class="form-control" id="SYNTROPY_ALLOWED_IPS" placeholder='# CIDR and Identifier, e.g. [{"0.0.0.0/0":"internet"}] for all networks'>
+    </div>
+                                <!--  END OF ADVANCED-->
+
+    
+    <div class="form-group hide">
+      <label for="exampleInputEmail1">H1</label>
+      <input type="text"  class="form-control" id="H1">
+
+    </div>
+
+    <div class="form-group hide">
+      <label for="exampleInputEmail1">H2</label>
+      <input type="text"  class="form-control" id="H2">
+    </div>
+
+    <button type="button" id="applyBtn" class="btn btn-success">Apply</button>
+    <button type="button" id="rebootBtn" class="btn btn-primary">Reboot system</button>
+    <button type="button" id="backBtn" onclick="location.href='selection.html'">Go back to selection</button>
+  </form>
+  <script src="agent.js"></script>
+
+</body>
+
+</html>
