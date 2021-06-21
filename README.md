@@ -43,10 +43,10 @@ There are many possible use-cases. In the end though, SyntroPies simply provides
 * The credentials of the ```pi``` user are left at their default values. It is recommended that you take steps to change these
 * For ease of access, you may also wish to configure a static IP for your Pi, either via your router (recommended) or the Pi itself
 * SSH is enabled by default on this image - you may wish to disable it if you don't expect to use it. This can easily be done with the ```raspi-config``` utility
-* For remote desktop access, you may wish to enable VNC via ```raspi-config``` > interfaces >
+* For remote desktop (GUI) access, you may wish to enable VNC via ```raspi-config``` > interfaces >
 
 ## Requirements
-* If you wish to run a VPN server, there are some requirements that need to be met. For one, you need access to your router, where you will need to do some port forwarding to your Raspberry Pi. Secondly, you need to nto be behind CGNAT - or in other words: your router's WAN interface needs to be assigned a publicly routable IP address.
+* If you wish to run a VPN server, there are some requirements that need to be met. For one, you need access to your router, where you will need to do some port forwarding to your Raspberry Pi. Secondly, you need to nto be behind [CGNAT](https://en.wikipedia.org/wiki/Carrier-grade_NAT) - or in other words: your router's WAN interface needs to be assigned a publicly routable IP address.
 * This image has been tested on Raspberry Pi model 4 B only - you may try other versions, but it is not guaranteed that these will work. In case of any problems, feel free to open an issue here.
 
 ## Documentation
