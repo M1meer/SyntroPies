@@ -2,20 +2,18 @@
 
 ## Introduction
 
-SyntroPies is a set of Raspberry Pi images pre-loaded with Syntropy Agent software and its dependent packages and modules. Included is also a simple cockpit-based application for easy agent management from any device on your home network (or elsewhere). No to drag up USB and HDMI cables, or configure it all via SSH - all you need to get started is a browser!
+SyntroPies is a set of Raspberry Pi images pre-loaded with Syntropy Agent software and its dependent packages and modules. Included is also a simple cockpit-based application for easy agent management from any device on your home network (or elsewhere). 
 
 
 ## Demo
 
 
 ## Installation
-First, download the zipped image here:
-
-Next, unzip the image and flash it to an SD card. We recommend using the official [Raspberry Pi imager](https://www.raspberrypi.org/software/).
-
-Plug in your Pi to one of your router's Ethernet LAN ports. It is likely that your router will assign the Pi a random IP address - you can find this address by accessing your router's management panel.
-
-Finally, to access your app, go to  ```<yourPiAddress>:9090``` and log in with the default Raspberry Pi credentials.
+1. First, download the zipped image [here]().
+2. Unzip the image and flash it to an SD card. We recommend using the official [Raspberry Pi imager](https://www.raspberrypi.org/software/).
+3. Plug in your Pi to one of your router's Ethernet LAN ports. 
+   * It is likely that your router will assign the Pi a random IP address - you can find this address by accessing your router's management panel.
+4. Finally, to access your app, go to  ```<yourPiAddress>:9090``` and log in with the default Raspberry Pi credentials.
 
 ## Usage
 
@@ -51,5 +49,5 @@ There are many possible use-cases. In the end though, SyntroPies simply provides
 * This image has been tested on Raspberry Pi model 4 B only - you may try other versions, but it is not guaranteed that these will work. In case of any problems, feel free to open an issue here.
 
 ## Documentation
-[Agent variables and their meanings](https://docs.syntropystack.com/docs/syntropy-agent-variables)
-[Creating a network via the Syntropy platform website](https://docs.syntropystack.com/docs/create-network)
+* [Agent variables and their meanings](https://docs.syntropystack.com/docs/syntropy-agent-variables)
+* [Creating a network via the Syntropy platform website](https://docs.syntropystack.com/docs/create-network)
