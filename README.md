@@ -2,7 +2,7 @@
 
 ## Introduction
 
-SyntroPies is a set of Raspberry Pi images pre-loaded with Syntropy Agent software and its dependent packages and modules. Included is also a simple cockpit-based application for configuration, making it simple to manage your Syntropy endpoint from any device on your home network (or elsewhere) - all you need is a browser!
+SyntroPies is a set of Raspberry Pi images pre-loaded with Syntropy Agent software and its dependent packages and modules. Included is also a simple cockpit-based application for configuration, making it simple to manage your Syntropy endpoint from any device on your home network (or elsewhere). No need for USB and HDMI cables - all you need is a browser!
 
 
 ## Demo
@@ -11,9 +11,9 @@ SyntroPies is a set of Raspberry Pi images pre-loaded with Syntropy Agent softwa
 ## Installation
 First, download the zipped image here:
 
-Next, unzip the image and flash it to an SD card - we recommend the official Raspberry Pi imager.
+Next, unzip the image and flash it to an SD card - we recommend the official [Raspberry Pi imager](https://www.raspberrypi.org/software/).
 
-Now plug in your Pi to one of your router's Ethernet LAN ports. It is likely that your router will assign the Pi a random IP address, which can be learned by accessing your router's management panel.
+Plug in your Pi to one of your router's Ethernet LAN ports. It is likely that your router will assign the Pi a random IP address - you can find this address by accessing your router's management panel.
 
 Finally, to access your app, go to  ```<yourPiAddress>:9090``` and log in with the default Raspberry Pi credentials.
 
@@ -37,15 +37,16 @@ There are many possible use-cases. In the end though, SyntroPies simply provides
 
 ## Post-installation recommendations
 
-The credentials of the ```pi``` user are left at their default values. It is recommended that you take steps to change these.
-
-For ease of access, you may also wish to configure a static IP for your Pi, either via your router (recommended) or the Pi itself.
-
+* The credentials of the ```pi``` user are left at their default values. It is recommended that you take steps to change these
+* For ease of access, you may also wish to configure a static IP for your Pi, either via your router (recommended) or the Pi itself
+* SSH is enabled by default on this image - you may wish to disable it if you don't expect to use it. This can easily be done with the ```raspi-config``` utility
+* For remote desktop access, you may wish to enable VNC via ```raspi-config``` > interfaces >
+* 
 ## Requirements
 * If you wish to run a VPN server, there are some requirements that need to be met. For one, you need access to your router, where you will need to do some port forwarding to your Raspberry Pi. Secondly, you need to nto be behind CGNAT - or in other words: your router's WAN interface needs to be assigned a publicly routable IP address.
 
 * This image has been tested on Raspberry Pi model 4 B only - you may try other versions, but it is not guaranteed that these will work. In case of any problems, feel free to open an issue here.
 
 ## Documentation
-Agent variables and their meanings
+[Agent variables and their meanings](https://docs.syntropystack.com/docs/syntropy-agent-variables)
 
