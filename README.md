@@ -2,7 +2,7 @@
 
 ## Introduction
 
-SyntroPies is a set of Raspberry Pi images pre-loaded with Syntropy Agent software and its dependent packages and modules. Included is also a simple cockpit-based application for easy agent management from any device on your home network (or elsewhere). 
+SyntroPies is a Raspberry Pi image pre-loaded with Syntropy Agent software and its dependent packages and modules. Included is also a simple cockpit-based application for easy agent management from any device on your home network (or elsewhere). 
 
 
 ## Demo
