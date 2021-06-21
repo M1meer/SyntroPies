@@ -78,4 +78,3 @@ function template_deploy() {
         .then(success)
         .catch(fail)
 }
-
