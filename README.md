@@ -46,7 +46,8 @@ There are many possible use-cases. In the end though, SyntroPies simply provides
 * For remote desktop (GUI) access, you may wish to enable VNC via ```raspi-config``` > interfaces >
 
 ## Requirements
-* If you wish to run a VPN server, there are some requirements that need to be met. For one, you need access to your router, where you will need to do some port forwarding to your Raspberry Pi. Secondly, you need to **not** be behind [CGNAT](https://en.wikipedia.org/wiki/Carrier-grade_NAT) - or in other words: your router's WAN interface needs to be assigned a publicly routable IP address. This  requirement may be subject to change in the future with custom syntropy agent VPN client releases. Unfortunately, CGNAT is a growing trend for home networks. There are some workarounds, though in these situations, setting up a Syntropy VPN server on a VPS would be the better way to approach the problem.
+* If you wish to run a VPN server, there are some requirements that need to be met. For one, you need access to your router, where you will need to do some port forwarding to your Raspberry Pi. Secondly, you need to **not** be behind [CGNAT](https://en.wikipedia.org/wiki/Carrier-grade_NAT) - or in other words: your router's WAN interface needs to be assigned a publicly routable IP address. Unfortunately, CGNAT is a growing trend for home networks. There are some workarounds, though in these situations, setting up a Syntropy VPN server on a VPS would be the better way to approach the problem.
+*  * This  requirement may be subject to change in the future with custom syntropy agent VPN client releases
 * This image has been tested on Raspberry Pi model 4 B only - you may try other versions, but it is not guaranteed that these will work. In case of any problems, feel free to open an issue here.
 
 ## Documentation
