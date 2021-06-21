@@ -23,9 +23,9 @@ To get started, you need to set up a [Syntropy account](https://www.syntropystac
 
 Once you are logged in to the cockpit interface, you will see "SyntroPies" listed in the left-hand panel. This is the management app. Click it, and you will be presented with three options of how to configure your endpoint:
 
-* As a standard agent, letting you connect to the Syntropy network
-* As a Syntropy VPN server, letting you tunnel traffic to it from standard Wireguard clients
-* As a standard Wireguard VPN client, letting you connect to other Syntropy VPN servers 
+* As a standard agent, letting you connect to the Syntropy network.
+* As a Syntropy VPN server, letting you tunnel traffic to it from standard Wireguard clients.
+* As a standard Wireguard VPN client, letting you connect to other Syntropy VPN servers.
 
 Choose according to your needs, and proceed.
 
@@ -40,13 +40,13 @@ There are many possible use-cases. In the end though, SyntroPies simply provides
 
 ## Post-installation recommendations
 
-* The credentials of the ```pi``` user are left at their default values. It is recommended that you take steps to change these
-* For ease of access, you may also wish to configure a static IP for your Pi, either via your router (recommended) or the Pi itself
-* SSH is enabled by default on this image - you may wish to disable it if you don't expect to use it. This can easily be done with the ```raspi-config``` utility
+* The credentials of the ```pi``` user are left at their default values. It is recommended that you take steps to change these.
+* For ease of access, you may also wish to configure a static IP for your Pi, either via your router (recommended) or the Pi itself.
+* SSH is enabled by default on this image - you may wish to disable it if you don't expect to use it. This can easily be done with the ```raspi-config``` utility.
 * For remote desktop (GUI) access, you may wish to enable VNC via ```raspi-config``` > interfaces >
 
 ## Requirements
-* If you wish to run a VPN server, there are some requirements that need to be met. For one, you need access to your router, where you will need to do some port forwarding to your Raspberry Pi. Secondly, you need to **not** be behind [CGNAT](https://en.wikipedia.org/wiki/Carrier-grade_NAT) - or in other words: your router's WAN interface needs to be assigned a publicly routable IP address.
+* If you wish to run a VPN server, there are some requirements that need to be met. For one, you need access to your router, where you will need to do some port forwarding to your Raspberry Pi. Secondly, you need to **not** be behind [CGNAT](https://en.wikipedia.org/wiki/Carrier-grade_NAT) - or in other words: your router's WAN interface needs to be assigned a publicly routable IP address. This may be subject to change in the future with custom syntropy agent VPN client releases. Unfortunately, CGNAT is a growing trend for home networks. There are some workarounds, though in these situations, setting up a Syntropy VPN server on a VPS would be the better way to approach the problem.
 * This image has been tested on Raspberry Pi model 4 B only - you may try other versions, but it is not guaranteed that these will work. In case of any problems, feel free to open an issue here.
 
 ## Documentation
