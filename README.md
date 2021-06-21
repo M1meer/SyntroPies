@@ -9,8 +9,8 @@ SyntroPies is a Raspberry Pi image pre-loaded with Syntropy Agent software and i
 
 
 ## Installation
-1. First, download the zipped image [here](https://drive.google.com/file/d/1Xbog89hK7NkvjQbJvH2K3fS7znCv6r5W/view?usp=sharing).
-2. Unzip the image and flash it to an SD card. We recommend using the official [Raspberry Pi imager](https://www.raspberrypi.org/software/).
+1. First, download the image [here](https://drive.google.com/file/d/1Xbog89hK7NkvjQbJvH2K3fS7znCv6r5W/view?usp=sharing).
+2. Flash the image to an SD card. We recommend using the official [Raspberry Pi imager](https://www.raspberrypi.org/software/).
 3. Plug in your Pi to one of your router's Ethernet LAN ports. 
    * It is likely that your router will assign the Pi a random IP address - you can find this address by accessing your router's management panel.
 4. Finally, to access your app, go to  ```<yourPiAddress>:9090``` and log in with the default Raspberry Pi credentials.
