@@ -19,16 +19,19 @@ Finally, to access your app, go to  ```<yourPiAddress>:9090``` and log in with t
 
 ## Usage
 
+To get started, you need to set up a [Syntropy account](https://www.syntropystack.com/) and [retrieve an access token](https://docs.syntropystack.com/docs/get-your-agent-token)
+
 Once you are logged in to the cockpit interface, you will see "SyntroPies" listed in the left-hand panel. This is the management app. Click it, and you will be presented with three options of how to configure your endpoint:
 
 * As a standard agent, letting you connect to the Syntropy network
 * As a Syntropy VPN server, letting you tunnel traffic to it from standard Wireguard clients
 * As a standard Wireguard VPN client, letting you connect to other Syntropy VPN servers 
 
+Choose according to your needs, and proceed.
 
 ## Use-cases
 
-If you choose to configure your Pi as a standard agent, you will be able to host other services on your device and connect these to other Syntropy endpoints via the Syntropy platform. As an example, you can host a web server which you can connect to from your
+If you choose to configure your Pi as a standard agent, you will be able to host other services on your device and connect these to other Syntropy endpoints via the Syntropy platform. As an example, you can spin up a docker instance of your choosing - say an nginx server - and access it via the Syntropy network from anywhere.
 
 As an example of a use-case of the VPN-centered configuration options, you could have a set of Raspberry Pis, leave one connected as a VPN server on your home network, and configure the other one as a VPN client acting as a wireless bridge. Wherever you go, you can then securely connect to the Internet from your home network via the tunnel.
 
@@ -48,4 +51,4 @@ There are many possible use-cases. In the end though, SyntroPies simply provides
 
 ## Documentation
 [Agent variables and their meanings](https://docs.syntropystack.com/docs/syntropy-agent-variables)
-
+[Creating a network via the Syntropy platform website](https://docs.syntropystack.com/docs/create-network)
