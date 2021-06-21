@@ -39,18 +39,13 @@ function wg_up() {
 function success() {
     codeblock.style.color = "green";
     codeblock.innerHTML = "-----===== S U C C E S S =====----\nNow, click the blue button below to start tunnelling your traffic through WireGuard";
-//    codeblock = document.getElementById('codeblock');
-//    codeblock.appendChild(document.createTextNode("-----===== S U C C E S S =====----\nNow, click the blue button below to start tunnelling your traffic through WireGuard"));
-//    codeblock.style.color = "green";
+
 }
 
 //failure message, will comment "failure" and color the code block red
 function fail() {
     codeblock.style.color = "red";
-    codeblock.innerHTML = "!!!! ! ! !  F A I L E D ! ! ! !!!!\n"; /*
-    codeblock = document.getElementById('codeblock');
-    codeblock.appendChild(document.createTextNode("!!!! ! ! !  F A I L E D ! ! ! !!!!"));
-    codeblock.style.color = "red"; */
+    codeblock.innerHTML = "!!!! ! ! !  F A I L E D ! ! ! !!!!\n"; 
 }
 
 function wg_config_deploy() {
