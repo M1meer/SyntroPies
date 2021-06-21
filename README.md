@@ -6,7 +6,7 @@ SyntroPies is a Raspberry Pi image pre-loaded with Syntropy Agent software and i
 
 
 ## Demo
-
+https://www.youtube.com/watch?v=wYufNorqfmE&fbclid=IwAR1LYl-Sbeo4kC3KnDovXn-9r1k-mUBkFScj-eq4qdjcXJwF7dyLvjHkB0A
 
 ## Installation
 1. First, download the image [here](https://drive.google.com/file/d/1Xbog89hK7NkvjQbJvH2K3fS7znCv6r5W/view?usp=sharing).
