@@ -2,7 +2,7 @@
 
 ## Introduction
 
-SyntroPies is a set of Raspberry Pi images pre-loaded with Syntropy Agent software and its dependent packages and modules. Included is also a simple cockpit-based application for easy agent management from any device on your home network (or elsewhere). No need to drag up USB and HDMI cables, or configure it all via SSH - all you need to get started is a browser!
+SyntroPies is a set of Raspberry Pi images pre-loaded with Syntropy Agent software and its dependent packages and modules. Included is also a simple cockpit-based application for easy agent management from any device on your home network (or elsewhere). No to drag up USB and HDMI cables, or configure it all via SSH - all you need to get started is a browser!
 
 
 ## Demo
@@ -46,7 +46,7 @@ There are many possible use-cases. In the end though, SyntroPies simply provides
 * For remote desktop (GUI) access, you may wish to enable VNC via ```raspi-config``` > interfaces >
 
 ## Requirements
-* If you wish to run a VPN server, there are some requirements that need to be met. For one, you need access to your router, where you will need to do some port forwarding to your Raspberry Pi. Secondly, you need to nto be behind [CGNAT](https://en.wikipedia.org/wiki/Carrier-grade_NAT) - or in other words: your router's WAN interface needs to be assigned a publicly routable IP address.
+* If you wish to run a VPN server, there are some requirements that need to be met. For one, you need access to your router, where you will need to do some port forwarding to your Raspberry Pi. Secondly, you need to **not** be behind [CGNAT](https://en.wikipedia.org/wiki/Carrier-grade_NAT) - or in other words: your router's WAN interface needs to be assigned a publicly routable IP address.
 * This image has been tested on Raspberry Pi model 4 B only - you may try other versions, but it is not guaranteed that these will work. In case of any problems, feel free to open an issue here.
 
 ## Documentation
