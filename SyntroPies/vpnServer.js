@@ -3,15 +3,15 @@ var checkPortRangi = document.getElementById('SYNTROPY_PORT_RANGE').value.length
 var CheckAllowedIPs = document.getElementById('SYNTROPY_ALLOWED_IPS').value.length;
 //check if Agent token, the only required value, has been ticked
 document.getElementById('applyBtn').addEventListener("click", () => {
-    if (checkAPI == 0 || checkPortRangi == 0 || CheckAllowedIPs == 0) {
-        alert("Required variables missing");
-        return;
-    }
-    else { //if so, prepare the button to write to disk, as well as the prepare codeblock
+//    if (checkAPI == 0 || checkPortRangi == 0 || CheckAllowedIPs == 0) {
+//        alert("Required variables missing");
+//        return;
+//    }
+//    else { //if so, prepare the button to write to disk, as well as the prepare codeblock
         document.getElementById('writeChangesBtn').style.display = "block";
         document.getElementById('codeblock').style.display = "block";
         codeblock.innerHTML = "---=== CHANGES TO BE WRITTEN ===---\n" + template_build();
-    }
+//    }
 });
 
 
